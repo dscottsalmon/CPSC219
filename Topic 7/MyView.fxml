@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DemoController">
+   <center>
+      <Label fx:id="myLabel" alignment="CENTER" text="Hello World" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font>
+      </Label>
+   </center>
+   <right>
+      <TextField fx:id="myTextField" onKeyTyped="#keyTypedInTextField" text="text field" BorderPane.alignment="CENTER" />
+   </right>
+   <left>
+      <PieChart fx:id="myPieChart" animated="false" title="Scott's Pie Chart" BorderPane.alignment="CENTER" />
+   </left>
+   <top>
+      <ComboBox fx:id="myDropBox" prefHeight="96.0" prefWidth="232.0" promptText="dropbox" BorderPane.alignment="CENTER" />
+   </top>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="myButton1" mnemonicParsing="false" onAction="#buttonOneClicked" text="Button 1" />
+            <Button fx:id="myButton2" mnemonicParsing="false" onAction="#buttonTwoClicked" text="Button 2" />
+            <Button fx:id="myButton3" mnemonicParsing="false" onAction="#buttonThreeClicked" text="My Button" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
